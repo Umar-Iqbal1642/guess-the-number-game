@@ -1,0 +1,208 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: monospace;
+    color: black;
+    border: none;
+}
+
+.res-hdng {
+    border-bottom: 1px solid white;
+}
+
+body {
+    min-height: 100vh;
+    max-height: 100vh;
+    min-width: 100%;
+    background: #4b9efc;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(34, 34, 195, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    overflow-y: scroll;
+}
+
+.game-ele {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 90%;
+    text-align: start;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 5px;
+    color: white;
+    font-family: "Hind Mysuru", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.main-cont {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+    min-height: 80vh;
+    max-height: 80vh;
+    position: relative;
+}
+
+.main-cont .main-hdng {
+    display: block;
+    width: 90%;
+    margin: auto;
+    font-weight: 800;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 10px;
+    color: white;
+    background-color: #2969b2;
+}
+
+.game-plate {
+    min-width: 500px;
+    max-width: 500px;
+    margin: auto;
+    gap: 30px;
+    padding: 40px 20px;
+    /* box-shadow: 0px 0px 5px 0px white; */
+    border: 1px solid white;
+    min-height: 90%;
+    max-height: 90%;
+    background-color: #5e7d00;
+    background-color: rgb(70, 2, 85);
+    background-color: rgb(54, 0, 66);
+}
+
+.result {
+    font-size: 16px;
+    font-weight: 700;
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    transition: all 0.35s ease-in-out;
+    box-shadow: 0px 0px 2px 0px white;
+    border: none;
+}
+
+.input-num {
+    color: black;
+    font-weight: 700;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.btn-cnt {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+}
+
+.btn-cnt>button {
+    flex: 1;
+}
+
+.playagian-btn {
+    display: none;
+}
+
+.btn {
+    border: none;
+    background-color: rgb(168, 132, 205);
+    border: 1px solid rgb(106, 81, 133);
+    text-align: center;
+    font-size: 18px;
+    vertical-align: middle;
+    color: white;
+    font-family: "Hind Mysuru", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.btn:hover {
+    border: 1px solid rgb(255, 255, 255);
+}
+
+
+@media(max-width: 768px) {
+
+    .main-cont {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .game-plate {
+        min-width: 90%;
+        max-width: 90%;
+    }
+
+    .main-cont .main-hdng {
+        font-size: 18px;
+    }
+
+
+}
+
+@media(max-width: 540px) {
+
+    .main-cont {
+        padding: 36px 20px;
+    }
+
+    .main-cont .main-hdng {
+        max-width: 98%;
+        font-size: 16px;
+    }
+
+    .game-plate {
+        min-width: 95%;
+        max-width: 95%;
+        padding: 40px 20px;
+    }
+
+    .result {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width:450px) {
+
+    .main-cont {
+        padding: 0px;
+        width: 100vw;
+        min-height: 100vh;
+        max-height: 100vh;
+    }
+
+
+    .main-cont .main-hdng {
+        width: 98%;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .game-plate {
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 100vh;
+        max-height: 100vh;
+
+        margin: auto 0px;
+    }
+
+    .game-ele {
+        font-size: 12px;
+        margin-bottom: 10px;
+        line-height: 25px;
+        width: 98%;
+    }
+
+    .btn-cnt {
+        width: 98%;
+    }
+
+}
